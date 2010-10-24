@@ -17,18 +17,27 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>PlexAudioCodec</key>
-	<string>MP3, AAC</string>
+	<array>
+		<string>MP3</string>
+		<string> AAC</string>
+	</array>
 	<key>PlexClientPlatforms</key>
 	<string>MacOSX</string>
 	<key>PlexFrameworkVersion</key>
 	<string>1</string>
 	<key>PlexMediaContainer</key>
-	<string>M4V, FLV</string>
+	<array>
+		<string>M4V</string>
+		<string> FLV</string>
+	</array>
 	<key>PlexPluginDebug</key>
 	<string>1</string>
 	<key>PlexPluginMode</key>
 	<string>AlwaysOn</string>
 	<key>PlexVideoCodec</key>
-	<string>VP6F, H.264</string>
+	<array>
+		<string>VP6F</string>
+		<string> H.264</string>
+	</array>
 </dict>
 </plist>
