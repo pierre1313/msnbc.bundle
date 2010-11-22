@@ -7,6 +7,7 @@ MSNBC_PREFIX      = "/video/msnbc"
 MSNBC_NAMESPACE   = {'v':'http://www.w3.org/2005/Atom', 'media':'http://search.yahoo.com/mrss/'}
 MSNBC_URL         = 'http://rss.msnbc.msn.com/id/'
 
+CACHE_INTERVAL = 3600
 
 ###################################################################################################
 def Start():
