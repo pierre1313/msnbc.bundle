@@ -1,7 +1,5 @@
 import re, string
 from PMS import *
-from PMS.Objects import *
-from PMS.Shortcuts import *
 
 MSNBC_PREFIX      = "/video/msnbc"
 MSNBC_NAMESPACE   = {'v':'http://www.w3.org/2005/Atom', 'media':'http://search.yahoo.com/mrss/'}

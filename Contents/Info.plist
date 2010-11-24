@@ -19,7 +19,7 @@
 	<key>PlexAudioCodec</key>
 	<array>
 		<string>MP3</string>
-		<string> AAC</string>
+		<string>AAC</string>
 	</array>
 	<key>PlexClientPlatforms</key>
 	<string>MacOSX</string>
@@ -27,17 +27,15 @@
 	<string>1</string>
 	<key>PlexMediaContainer</key>
 	<array>
+		<string>FLV</string>
 		<string>M4V</string>
-		<string> FLV</string>
 	</array>
-	<key>PlexPluginDebug</key>
-	<string>1</string>
 	<key>PlexPluginMode</key>
 	<string>AlwaysOn</string>
 	<key>PlexVideoCodec</key>
 	<array>
 		<string>VP6F</string>
-		<string> H.264</string>
+		<string>H.264</string>
 	</array>
 </dict>
 </plist>
