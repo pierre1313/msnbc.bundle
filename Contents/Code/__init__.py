@@ -22,7 +22,7 @@ def Start():
 def MainMenu():
   dir = MediaContainer()
   dir.Append(Function(DirectoryItem(News,           title="All News", thumb=R('icon-default.jpg'))))
-  dir.Append(Function(DirectoryItem(Countdown,      title="Countdown with Keith Olbermann", thumb=R('countdown.png'))))
+#  dir.Append(Function(DirectoryItem(Countdown,      title="Countdown with Keith Olbermann", thumb=R('countdown.png')))) # he'll be on the Current TV plugin soon enough
   dir.Append(Function(DirectoryItem(Maddow,         title="The Rachel Maddow Show", thumb=R('maddow.png'))))
   dir.Append(Function(DirectoryItem(Nightly_News,   title="Nightly News with Brian Williams", thumb=R('nightly_news.png'))))
   dir.Append(Function(DirectoryItem(Meet_The_Press, title="Meet The Press", thumb=R('meet_the_press.png'))))
@@ -56,8 +56,8 @@ def GetVideo(sender, episodeid):
   return Redirect(path)
 
 def GetLatestEpisode(sender, path):
-  return Redirect(XML.ElementFromURL('http://podcast.msnbc.com/audio/podcast/%s.xml'%path).xpath('//enclosure')[0].get('url'))
-  
+  return Redirect(XML.ElementFromURL('http://podcastfeeds.nbcnews.com/audio/podcast/%s.xml'%path).xpath('//enclosure')[0].get('url'))
+
 ###################################################################################################
 def GetVideosRSS(sender, name, title2):
   dir = MediaContainer(viewGroup='Details', title2=title2)
@@ -430,4 +430,4 @@ def N_Weather(sender):
   return dir
 
 
-########################### END All News END #####################################################
+########################### END All News END #####################################################	
