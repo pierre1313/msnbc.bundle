@@ -81,8 +81,11 @@ def GetVideosRSS(sender, name, title2):
       summary = StripTags(video.find('description').text)
 
       dir.Append(Function(VideoItem(GetVideo, title=title[7:], subtitle=date, summary=summary, thumb=Function(GetThumb, path = thumbpath)),episodeid = episodeid))
-  return dir
 
+  if (len(dir) == 0):
+    return MessageContainer("Empty Category","This category does not contain any video.")
+  else:
+    return dir
   
 ########################### END Keith Olbermann END ################################################
 ########################### Rachel Maddow ##########################################################
